@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<link rel="stylesheet" href="js css.css">
+<title>Estudando JS</title> 
+
+
+<script>
+function mude(){ 
+    document.getElementById('função').innerHTML="mudou lol";
+}
+// essa fuction ta no "javascript pra onde"
+
+</script>
+</head> 
+
+<body>
+ <h2 id="titulo"> Tentando usar o JavaScrip</h2>
+<p> <a href="https://www.w3schools.com/js/js_intro.asp">Intodção Js</a>{</p>
+
+
+<button onclick="document.getElementById('titulo').style.fontSize='50px'"> +</button>
+<button onclick="document.getElementById('titulo').style.fontSize='27px'"> o</button>
+<button onclick="document.getElementById('titulo').style.fontSize='10px'"> -</button>
+
+<p id="test"> o javascripit consegue mudar as elementos, ó </p>
+
+<button type="button" onclick='document.getElementById("test").innerHTML="Viu, mudou"'> clica aki pra mudar</button> 
+
+
+<p> Clicou, ok vamos continuar, leve isso aqui como um separador </p> 
+
+
+
+<button onclick="document.getElementById('im').src='Oi.jpg'"> olá</button> 
+<img id="im" src="sei la.png" style="width: 100px;">
+<button onclick="document.getElementById('im').src='sei la.png'"> sei la</button> 
+
+
+<p> </p>
+<p id="kd" style="display:none"> SURPRISE MOTHER FUCKER </p>
+
+<button type="button"
+onclick="document.getElementById('kd').style.display='block'"> aparecer 
+</button>
+<button type="button"
+onclick="document.getElementById('kd').style.display='none'"> sumir
+</button>
+
+<p>}</p>
+<p class="separador"> -------------------------------------------------------------------------------------------------------------------------- </p> 
+<p><a href="https://www.w3schools.com/js/js_whereto.asp"> JavaScript para onde </a>{</p>
+
+<p id="p"></p> 
+
+<script>
+    document.getElementById('p').innerHTML="isso foi escrito pelo js";
+</script>
+
+<p id="função"> esse paragra vai ser mudado por uma pela tag function no head se vc apertar o botão</p>
+
+<button type="button" onclick="mude()"> botão </button>
+
+<p>}</p>
+<p class="separador"> --------------------------------------------------------------------------------------------------------------------------</p> 
+<p><a href="https://www.w3schools.com/js/js_output.asp"> JavaScript Output</a>{ JavaScript pode "exibir" dados de maneiras diferentes:</p>
+
+
+<p id="inner">Escrevendo em um elemento HTML, usando innerHTML.</p>
+<p id="write">Escrevendo na saída HTML usando document.write().------ write(10 + 5) --> <script>document.write(10 + 5)</script></p>
+<p>Escrevendo em uma caixa de alerta, usando window.alert().</p>
+<!--Escrevendo no console do navegador, usando console.log()
+
+F12 em seu teclado ativará a depuração.
+Em seguida, selecione "Console" no menu do depurador.
+Em seguida, clique em Executar novamente. -->
+
+</p>
+
+<button type='button' onclick="document.getElementById('inner').innerHTML='isso foi escrito pelo innerHTML'">innerHTML</button>
+<button type='button' onclick= "window.alert('isso foi escrito pelo window.alert');"> window.alert()</button> 
+<p>}</p>
+<p class="separador"> -------------------------------------------------------------------------------------------------------------------------- </p> 
+<p> <a href="https://www.w3schools.com/js/js_statements.asp"> declarações</a> {</p>
+
+<p>programando com Js:</p>
+<p id='prog'></p> 
+
+<script>
+ let x, y, z; //declaração 1 
+ x = 3; //declaração 2
+ y = 9; //declaração 3
+ z = x * y; //declaração 4 
+ document.getElementById('prog').innerHTML=' uau variaveis, finalmente: o valor de z é = x . y que é = a '+ z +'.'; 
+</script>
+
+<button type="button" onclick="ceviu()"> function </button>
+<p id='demo1'></p>
+<p id="demo2"></p> 
+
+<script>
+function ceviu(){
+document.getElementById('demo1').innerHTML='Opa meu chapa, cê viu q apareceu dois p?';
+document.getElementById('demo2').innerHTML=
+'graças ao function'; //O melhor lugar para quebrar uma linha de código é depois de um operador ou uma vírgula.
+}
+<p class="separador"> -------------------------------------------------------------------------------------------------------------------------- </p> 
+</script>]
+
+
+
+<!-- As instruções JavaScript geralmente começam com uma palavra - chave para identificar a ação JavaScript a ser executada.
+Aqui está uma lista de algumas das palavras-chave que você aprenderá neste tutorial:
+
+Palavra-chave	    Descrição
+
+var	                Declara uma variável
+let	                Declara uma variável de bloco
+const	            Declara uma constante de bloco
+if	                Marca um bloco de instruções a serem executadas em uma condição
+switch	            Marca um bloco de instruções a serem executadas em casos diferentes
+for	                Marca um bloco de instruções a ser executado em um loop
+function	        Declara uma função
+return	            Sai de uma função
+try	                Implementa o tratamento de erros em um bloco de declarações-->
+</body>
+</html>

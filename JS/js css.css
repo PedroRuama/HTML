@@ -1,0 +1,20 @@
+.separador{ 
+    font-weight: 800;
+}
+
+body{
+font-family: Arial;
+border-right: 3px solid black ;
+width: 50%;
+}
+
+h2{
+    
+    background-color: gray;
+    border: 10px solid gray ;
+    text-align: center;
+    margin: 15px;
+}
+button{
+    background-color: lightslategray;
+}
