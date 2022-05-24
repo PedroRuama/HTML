@@ -1,0 +1,35 @@
+#d1{ 
+    background-color: royalblue;
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    margin-left: 20%;
+    margin-top: 10%;
+    display: inline-flex;
+    
+}
+#d2{ 
+    background-color: firebrick;
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    margin-left: 15%;
+    margin-top: 10%;
+    display: inline-flex;
+    
+
+}
+
+p{
+ color: white;
+ margin-top: 10%;
+ margin-left: 10%;
+ 
+
+}
+input{
+    height: 20px;
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 5%;
+}
