@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 13px;
+    background-color: #14448C;
+}
+p{
+    font-size: xx-large;
+}
+a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+a:hover{
+    text-decoration: overline;
+    color: #ECC826;
+}
+.col-8{
+    font-size: xx-large;
+}
+.col{
+    font-size: x-large;
+}
+.menu{
+    margin-right: 2.5rem;
+}
+
+footer{
+    background-color: #14448C;
+    position: absolute;
+    bottom: 0;
+}
+
+/*
+h1{
+    background-color: black;
+    color: aliceblue;
+    /*sentido horário - cima direita embaixo esquerda
+    margin: 20px 30px 40px 50px;
+}
+
+h2{
+    background-color: blue;
+    color: crimson;
+    padding: 100px;
+    /*cima-baixo direita-esquerda 
+    margin: 20px 20px;
+}
+
+
+
+transition: 1s;
+:focus
+*/
+
