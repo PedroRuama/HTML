@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<!-- <style>
+    #titulo {
+        padding: 20px;
+        border-bottom: 2px solid gray;
+    }
+</style> -->
+
+<body>
+    
+    <h1 id="titulo">PROGRAMA DA MEGA SENA</h1>
+    <hr>
+    <label for="numeroDeJogos"> Informe o número de jogos:</label><br>
+    <input type="number" id="numeroDeJogos" class="input" min="1" value="1"> <br><br>
+    <!-- input#numeros.input[min=1 value=1] -->
+    
+    <label for="numeroDeJogo">Escolha a quantidade de números por jogo</label> <br>
+    <!-- <input type="number" id="numeroDeJogo" min="1" value="1"> <br><br> -->
+    <select id="numeroPorJogo"></select><br><br>
+
+    <button onclick="gerarJogos()">Gerar Jogos</button><br><br>
+    
+    <table id="jogosMegaSena" border="1"></table>
+    
+
+</body>
+
+</html>
