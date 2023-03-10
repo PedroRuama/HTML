@@ -13,7 +13,7 @@ function gerarNumeroRandom(min, max){
 }
 
 function gerarJogos(){
-    let numeroDeJogo = document.getElementById('numeroDeJogo').value
+    let numeroDeJogo = document.getElementById('numeroDeJogos').value
     let numeroPorJogo = Number(document.getElementById('numeroPorJogo').value)
 
     let tabela = document.getElementById('jogosMegaSena')
@@ -27,17 +27,25 @@ function gerarJogos(){
         let linha = tabela.insertRow(qtdeLinhas)
         linha.insertCell(0).innerHTML = `Jogo ${jogos} : `
 
-        let numeroSorteados = new Array()
+        let numeroSorteados = new Array() //ou só []
+
         for(let numeros = 1; numeros <= numeroPorJogo; numeros++){ //colunas
             let numero = gerarNumeroRandom(1, 60)
             //como adiciona um elemento no final do array
-            numeroSorteados.push(numero);
+            if(numeroSorteados.includes(numero)){  //includes (se o numero já esta incluido no array)
+
+                numeros--; //retira 1, logo que acabar o for é adicionado dnv e refaz o lance
+            } else {
+                numeroSorteados.push(numero)
+            }
         }
         //adicionar os numeros sorteados na tabela
         let coluna = 1
+        numeroSorteados.sort((x, y) => x - y) // facilita a ordenação
         numeroSorteados.forEach(function(numero){
             linha.insertCell(coluna).innerHTML = numero
             coluna++
+            
         })
     }
 
