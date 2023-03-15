@@ -1,0 +1,41 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 235, 240);
+}
+
+#conteiner{
+    
+    display: flex;
+    flex-direction: column;
+    width: 40%; 
+    
+}
+
+#gerador{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black ;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#titulo{
+    display: flex;
+    position: relative;
+}
+#img_logo{
+    width: 100%;
+    border-radius: 15px;
+}
+/* 
+
+#jogosMegaSena{
+    border: 1px solid black;
+} */
