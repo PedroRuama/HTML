@@ -19,17 +19,24 @@
         <br>
         <div id="gerador">
 
-            <label for="numeroDeJogos" > Informe o número de jogos:</label><br>
             <div class="aling">
-                <input type="number" id="numeroDeJogos" class="input" min="1" value="1"> <br><br>                
+                <label for="numeroDeJogos" > Informe o número de jogos:</label>
+                <input type="number" id="numeroDeJogos" class="input" min="1" value="1">                
             </div>
             <!-- input#numeros.input[min=1 value=1] -->
             
-            <label for="numeroDeJogo">Escolha a quantidade de números por jogo</label> <br>
             <!-- <input type="number" id="numeroDeJogo" min="1" value="1"> <br><br> -->
-            <select id="numeroPorJogo"></select><br><br>
+            <div class="aling">
+                <label for="numeroDeJogo">Escolha a quantidade de números por jogo</label> <br>
+                
+                <select id="numeroPorJogo" class="input"></select><br><br>
+            </div>
             
-            <button onclick="gerarJogos()">Gerar Jogos</button><br><br>
+            <div style="display: flex; justify-content: end;">
+
+                <button onclick="gerarJogos()" id="gerar">Gerar Jogos</button><br><br>
+
+            </div>
             
             <table id="jogosMegaSena" border="1"></table>
         </div>
