@@ -72,17 +72,22 @@ label{
     width: 20%;
     font-size: 18px;
     color: black;
-    
+    border-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(230, 235, 240);
     
 }
 
 #gerar:hover{
     color: white;
-    background-color: rgb(69, 167, 69);
+    border-color: rgb(69, 167, 69);
+    color:rgb(69, 167, 69);
 
 }
 
 
 #jogosMegaSena{
+    
     font-size: 20px;
 }
