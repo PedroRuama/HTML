@@ -21,7 +21,7 @@ function cor_add(){
     }
     
     
-    document.getElementById("div_corG").innerText = cor
+    document.getElementById("div_corG").innerText = cor 
 
     document.getElementById("conteiner").style = `background-color: ${cor};`
 
