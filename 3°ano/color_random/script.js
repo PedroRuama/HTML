@@ -1,13 +1,34 @@
-function corG(){
-    const cor = "0123456789ABCDEF"
-    const corG = '#'
-    for(let i = 0; i < 6; i++){
-        corG += Math.floor(Math.random( ) * cor.length)
+// function corG(){
+//     const cod = "0123456789ABCDEF"
+//     const cor = '#'
+//     for(let i = 0; i < 6; i++){
+//         cor += Math.floor(Math.random() * cod.length)
 
-    }
-    return corG
-}
+//     }
+//     return cor
+    
+// }
 
 function cor_add(){
-    document.getElementById("")
+    document.getElementById("instrucao").style = "display: none"
+    document.getElementById("div_corG").style = "display:  flex"
+
+    let cod = "0123456789ABCDEF"
+    let cor = "#"
+
+    for(let i = 0; i < 6; i++){
+        cor += cod.charAt(Math.floor(Math.random() * cod.length))
+    }
+    
+    
+    document.getElementById("div_corG").innerText = cor
+
+    document.getElementById("conteiner").style = `background-color: ${cor};`
+
+    
+
+
+
+
+    
 }
