@@ -13,7 +13,7 @@ const reviews = [
     id: 2,
     name: 'anna johnson',
     job: 'web designer',
-    img: 'https://media.discordapp.net/attachments/856955916841517077/1093183930838024212/carol.png?width=450&height=450',
+    img: 'https://media.licdn.com/dms/image/C4D03AQEi00cpgb4CGw/profile-displayphoto-shrink_800_800/0/1580210410567?e=2147483647&v=beta&t=Lo1jVUUst4rWDEzXBoltIgomsiZGpWJ2ZEkws9c7a_c',
     text: 'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
   },
   {
@@ -43,39 +43,36 @@ const reviews = [
   }
 ];
 
-let i = 0
+let i = -1
 
 function next() {
-  if (i <= 4) {
-
+  if (i < 4) {
+    i++
     document.getElementById("person-img").src = reviews[i].img
     document.getElementById("author").innerText = reviews[i].name
     document.getElementById("info").innerText = reviews[i].text
     document.getElementById("job").innerText = reviews[i].job
-
-    console.log(i)
-    i++
-  } 
-  else{
-    i = 0
   }
-    
+  else {
+    i = -1
+  }
 }
 function back() {
-
-  if (i > 0) {
-    i - 1
-    document.getElementById("person-img").src = reviews[i].img
-    document.getElementById("author").innerText = reviews[i].name
-    document.getElementById("info").innerText = reviews[i].text
-    document.getElementById("job").innerText = reviews[i].job
-
-    console.log(i)
-    i--
+  i--
+  if (i < 0) {
+    i = 4
   }
-  console.log(i)
-
-    
+  document.getElementById("person-img").src = reviews[i].img
+  document.getElementById("author").innerText = reviews[i].name
+  document.getElementById("info").innerText = reviews[i].text
+  document.getElementById("job").innerText = reviews[i].job
 }
+function surpr() {
+  i = Math.floor(Math.random() * 5) //numeros aleatorios de 0 a 4 
+  document.getElementById("person-img").src = reviews[i].img
+  document.getElementById("author").innerText = reviews[i].name
+  document.getElementById("info").innerText = reviews[i].text
+  document.getElementById("job").innerText = reviews[i].job
 
+}
 
