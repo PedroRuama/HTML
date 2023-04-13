@@ -43,6 +43,13 @@ function gerarJogos(){
         let coluna = 1
         numeroSorteados.sort((x, y) => x - y) // facilita a ordenação
         numeroSorteados.forEach(function(numero){
+
+            // adiciona um 0 a esquerda aos números sozinhos
+            numero = String(numero)
+            if (numero.length == 1) {
+                numero = "0" + numero
+            }
+
             linha.insertCell(coluna).innerHTML = numero
             coluna++
             
