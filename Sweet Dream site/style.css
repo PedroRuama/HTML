@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Slab:wght@100&display=swap');
+
+
+
+
+body{
+    background-color: rgb(235, 225, 225);
+    font-family: 'Roboto Slab', serif;
+    margin:0px;
+}
+
+#top{
+    color: rgb(235, 225, 225);
+    background-color: #fa4069;
+    border: solid #fa4069 5px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo{
+    font-family: 'Niconne', cursive;
+    font-size: 300%;
+    text-align: center;
+    color: rgb(235, 225, 225);
+    display: inline-block;
+    
+}
+#titulo a{
+    text-decoration: none;
+    color: rgb(235, 225, 225);
+}
+#usuario{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    
+}
+#nome_usuario{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#perfil{
+    background-color: #eedfc3;
+    display: inline-block;
+    border-color: #fa4069;
+    height: 40px;
+    width: 40px;
+    margin-right: 0px;
+    border-radius: 100px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-conteudo{
+    display: none;
+    position: absolute;
+    background-color: #eedfc3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    left: -25%;
+    
+    
+}
+#usuario_dropdown_conteudo{
+    margin-top: 235%;
+    /*display: none;*/
+    
+}
+
+
+.dropdown-conteudo a{
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* diz pro texto não quebrar*/
+    border-bottom: 1px solid #c8b080;
+    margin: 5px;
+    
+    
+}
+
+.dropdown:hover .dropdown-conteudo{
+    display: block;
+   
+}
+/*
+#img_menu{
+    width: 25px;
+    height: 25px;
+}*/
+#menu{
+    background-color: #fa406800;
+    border: none;
+    display: flex;
+    
+}
+#menu_div{
+    margin-top: 0px;
+    
+   
+}
+#menu_ponto{
+    width: 40px;
+    height: 40px;
+}
+
+
+#cardapios{
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+
+.img_cardapio{
+    height: 33vw;
+    width: 22vw;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+
+.cardapios{
+    margin-left: 20px;
+    padding: 1vw 0.4vw;
+    background-color:  #c8b080;
+    display: inline;
+    height: 37vw;
+    width: 22vw;
+    border-radius: 10px;
+    
+
+}
+
+.nome_cardapio{
+    
+    text-align: center;
+    font-family: "Niconne";
+    font-size: 40px;
+    color: #9c073e;
+}
+a{
+    text-decoration: none;
+}
+
+#cardapios :hover{
+    transition: ease-in-out 0.2s;
+    background-color:  #9c073e;
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
+}
+
+.cardapios:hover .nome_cardapio {
+    transition: ease-in-out 0.2s;
+    color:rgb(235, 225, 225)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color {
+    color: rgb(235, 225, 225);
+    color: #af0745;
+    color: #fa4069;
+    color:#fe9c6b;
+    color: #fcda90;
+    color: #c8b080;
+    color:#9c073e
+}
+
+
+/* border-bottom: solid #af0745 5px;
+border-left: 
+border-radius: 5px; ---->  redondinho */
