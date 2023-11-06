@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Slab:wght@100&display=swap');
+
+
+/*///////////////// barra de navegação//////////////////*/ 
+body{
+    background-color: rgb(235, 225, 225);
+    font-family: 'Roboto Slab', serif;
+    margin:0px;
+    
+}
+
+#top{
+    color: rgb(235, 225, 225);
+    background-color: #fa4069;
+    border: solid #fa4069 5px;
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+#titulo{
+    font-family: 'Niconne', cursive;
+    font-size: 300%;
+    text-align: center;
+    color: rgb(235, 225, 225);
+    display: inline-block;
+    
+}
+#titulo a{
+    text-decoration: none;
+    color: rgb(235, 225, 225);
+}
+#usuario{
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    
+}
+#nome_usuario{
+    margin-right: 5px;
+    display: inline-block;
+}
+#perfil{
+    background-color: #eedfc3;
+    display: inline-block;
+    border-color: #fa4069;
+    height: 40px;
+    width: 40px;
+    margin-right: 0px;
+    border-radius: 100px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-conteudo{
+    display: none;
+    position: absolute;
+    background-color: #eedfc3;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    left: -25%;
+    
+    
+}
+#usuario_dropdown_conteudo{
+    margin-top: 235%;
+    /*display: none;*/
+    
+}
+.dropdown-conteudo a{
+    color: black;
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* diz pro texto não quebrar*/
+    border-bottom: 1px solid #c8b080;
+    margin: 5px;
+    
+    
+}
+.dropdown:hover .dropdown-conteudo{
+    display: block;
+   
+}
+/*
+#img_menu{
+    width: 25px;
+    height: 25px;
+}*/
+#menu{
+    background-color: #fa406800;
+    border: none;
+    display: flex;
+    
+}
+#menu_div{
+    margin-top: 0px;
+    
+   
+}
+#menu_ponto{
+    width: 40px;
+    height: 40px;
+}
+/*///////////////// barra de navegação//////////////////*/ 
+
+
+
+
+.titulo_cardapio{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    margin: auto;
+    color:rgb(235, 225, 225);
+    background-color: #9c073e;
+    margin-top: 3%;
+    height: 40px;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 140%;
+}
+
+.carousel{
+    display:inline-flex;
+    
+}
+
+
+.div_itemMenu{
+    height: 280px;
+    width: 300px;
+    display: block;
+    background-color: rgb(194, 172, 172);
+    margin: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    
+   
+}
+:hover.div_itemMenu {
+    background-color: rgb(144, 125, 125);
+}
+
+.img_itemMenu{
+    width: 285px;
+    height: 200px;
+    display: block; 
+    border-radius: 20px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.nome_itemMenu{
+    
+    display: flex;
+    
+}

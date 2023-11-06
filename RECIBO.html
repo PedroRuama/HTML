@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RECIBO</title>
+    <script>
+        String.prototype.reverse = function () {
+            return this.split('').reverse().join('');
+        };
+        
+        function mascaraMoeda(campo, evento) {
+            var tecla = (!evento) ? window.event.keyCode : evento.which;
+            var valor = campo.value.replace(/[^\d]+/gi, '').reverse();
+            var resultado = "";
+            var mascara = "##.###.###,##".reverse();
+            for (var x = 0, y = 0; x < mascara.length && y < valor.length;) {
+                if (mascara.charAt(x) != '#') {
+                    resultado += mascara.charAt(x);
+                    x++;
+                } else {
+                    resultado += valor.charAt(y);
+                    y++;
+                    x++;
+                }
+            }
+            campo.value = resultado.reverse();
+        }
+    </script>
+</head>
+
+<style>
+    body {
+        font-family: Arial;
+        justify-content: center;
+        display: block;
+
+    }
+
+    #corpo {
+        display: block;
+        height: 760px;
+        width: 1200px;
+        border: 3px solid black;
+        border-radius: 30px;
+
+    }
+
+    #cabecalho {
+        height: 250px;
+        width: 97%;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-left: 15px;
+
+        background-color: white;
+        border-bottom: 3px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    #titulo {
+        font-size: 50px;
+        font-family: 'Arial';
+
+    }
+
+    #subTitulo {
+
+        align-items: center;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subTitulo {
+        font-size: 19px;
+
+        margin: 0px;
+
+
+    }
+
+    #infos {
+        background-color: white;
+        align-items: center;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contInfo {
+        font-size: 30px;
+    }
+
+    #boxInfo {
+        display: flex;
+        width: 90%;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 40px;
+    }
+
+    p {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        justify-content: center;
+    }
+
+    #conteudo {
+        margin-left: 15px;
+    }
+
+    #rcb {
+        margin-top: 10px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        font-size: 35px;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #rcb1 {
+        display: flex;
+        align-items: center;
+    }
+
+    #rs {
+        width: 250px;
+        font-size: 35px;
+        margin-left: 10px;
+
+
+    }
+
+    .boxinput {
+        height: 30px;
+        background-color: lightgrey;
+        margin-right: 3px;
+        width: 100%;
+        font-size: 20px;
+
+
+
+
+    }
+
+
+    .boxinput:focus {
+        background-color: darkgrey;
+    }
+
+    .inputtxt:focus {
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .lineinput {
+        border-bottom: 2.5px solid black;
+        display: inline-flex;
+    }
+
+
+    .inputtxt {
+        font-size: 20px;
+        width: 100%;
+        border: none;
+
+
+    }
+
+    .txt {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #data {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .data {
+        text-align: center;
+    }
+
+
+
+    #logoDiv {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #img {
+        display: flex;
+        height: 240px;
+        width: 240px;
+        margin-bottom: 5px;
+    }
+
+    #aass {
+
+        display: flex;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #aass1 {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        height: 40px;
+        align-items: center;
+        position: relative;
+    }
+
+    #ass {
+        border-top: 2px solid black;
+        width: 350px;
+        text-align: center;
+        margin-right: 10px;
+
+
+
+    }
+
+    #ass1 {
+        display: flex;
+        justify-content: center;
+        width: 350px;
+
+    }
+
+    #escritaAss {
+        display: flex;
+        height: 100px;
+        width: 100px;
+
+    }
+</style>
+
+<body>
+    <div id="corpo">
+        <div id="cabecalho">
+            <div id="logoDiv">
+                <img src="https://media.discordapp.net/attachments/1037390661038641253/1067294508645105784/Logotipo_circular_monograma_elegante_feminino_amarelo_e_preto_.png"
+                    alt="Municipal Entulhos Logo" id="img">
+                <!-- -->
+            </div>
+            <div id="titulo">
+                <b> MUNDIAL ENTULHOS LTDA. - ME</b>
+                <div id="subTitulo">
+                    <div class="subTitulo">
+                        <b>CNPJ 03.344.685/0001-81</b>
+                    </div>
+                    <div class="subTitulo">
+                        <b>inscr Municipal 2.822.674-3</b>
+                    </div>
+
+                </div>
+                <div id="infos">
+                    <div id="boxInfo">
+
+                        <div class="contInfo"><b>Tel.: 3763-2253</b></div>
+                        <div class="contInfo" id="paragrafos">
+                            <p><b>Caçambas</b></p>
+                            <p><b>Estacionárias</b></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="conteudo">
+
+            <div id="rcb">
+                <div>
+                    <b>RECIBO</b>
+                </div>
+                <div id="rcb1">
+                    <b>R$</b> <input oninput="mascaraMoeda(this, event)" name="dinheiro" class="boxinput" id="rs">
+                </div>
+            </div>
+            <div class="txt">
+                Recebi (emos) de <div class="lineinput" style="width: 1005px;"> <input type="text" class="inputtxt">
+                </div>
+            </div>
+            <div class="txt">
+                Endereço: <div class="lineinput" style="width: 1074px;"> <input type="text" class="inputtxt"> </div>
+            </div>
+            <div class="txt">
+                A importancia de: <div style="width: 1015px; display: inline-flex; "> <input type="text"
+                        class="boxinput"> </div>
+            </div>
+            <div class="txt">
+                <div style="width: 1175px; display: inline-flex; "> <input type="text" class="boxinput"> </div>
+            </div>
+            <div class="txt">
+                Referente à <div class="lineinput" style="width: 1062px;"> <input type="text" class="inputtxt"> </div>
+            </div>
+            <div class="txt">
+                <div class="lineinput" style="width: 1175px;"> <input type="text" class="inputtxt"> </div>
+            </div>
+            <div class="txt">
+                <div class="lineinput" style="width: 1175px;"> <input type="text" class="inputtxt"> </div>
+            </div>
+            <div class="txt" id="data">
+                <div> Para clareza firmo o presente recibo.</div>
+
+                <div>São Paulo,
+                    <div class="lineinput" style="width: 50px;"> <input type="number" class="inputtxt"
+                            style="text-align: center;"></div>
+                    de
+                    <div class="lineinput" style="width: 130px;"> <input type="text" class="inputtxt"
+                            style="text-align: center;"></div>
+                    de
+                    <div class="lineinput" style="width: 70px; margin-right: 10px;"><input type="number"
+                            class="inputtxt" id="year" style="text-align: center;"></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="aass1">
+            <div id="ass1"> <img
+                    src="https://media.discordapp.net/attachments/1037390661038641253/1068274400115302430/ass2.png"
+                    alt="assinatura" id="escritaAss"></div>
+        </div>
+        <!--https://media.discordapp.net/attachments/1037390661038641253/1068274400115302430/ass2.png-->
+        <div id="aass">
+
+
+            <div id="ass"> Assinatura</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
