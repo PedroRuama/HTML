@@ -32,11 +32,16 @@
                 <select id="numeroPorJogo" class="input"></select><br><br>
             </div>
             
-            <div style="display: flex; justify-content: end;">
-
+            <div style="display: flex; justify-content: space-between;">
+                <form > 
+                    <input type="number"  placeholder="Insira as tentativas" id="apostar">
+                    <button type="reset" class="btnAposta" onclick="aposta()">Enviar</button>
+                </form>
+                <br>
                 <button onclick="gerarJogos()" id="gerar">Gerar Jogos</button><br><br>
 
             </div>
+            <div id="aposta_div">Jogos:</div>
             
             <table id="jogosMegaSena" border="1"></table>
         </div>

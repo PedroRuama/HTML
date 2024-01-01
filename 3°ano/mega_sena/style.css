@@ -10,7 +10,6 @@ body{
 .aling{
     width: 100%;
     display: flex;
-    
     padding: 0px 0px 10px 0px;
     align-items: center;
 }
@@ -91,3 +90,13 @@ label{
     
     font-size: 20px;
 }
+
+#apostar{
+    height: 50%;
+}
+.btnAposta{
+    height: 50%;
+   
+}
+
+

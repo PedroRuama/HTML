@@ -12,6 +12,32 @@ function gerarNumeroRandom(min, max){
     return numero
 }
 
+
+
+
+var valApostados = []
+function aposta() {
+
+    
+    var apostas = document.getElementById("apostar").value
+    
+    valApostados.push(apostas)
+    console.log(valApostados);
+    document.getElementById('aposta_div').innerHTML = `Apostas: ${valApostados}`
+
+    document.getElementById("apostar").reset = true
+   
+    
+}
+
+
+
+
+
+
+
+
+
 function gerarJogos(){
     let numeroDeJogo = document.getElementById('numeroDeJogos').value
     let numeroPorJogo = Number(document.getElementById('numeroPorJogo').value)
@@ -36,20 +62,44 @@ function gerarJogos(){
 
                 numeros--; //retira 1, logo que acabar o for é adicionado dnv e refaz o lance
             } else {
-                numeroSorteados.push(numero)
+                numeroSorteados.push(numero) //adiciona o numero na array
             }
+            
+            
         }
+
+
+
         //adicionar os numeros sorteados na tabela
         let coluna = 1
+     
+        
         numeroSorteados.sort((x, y) => x - y) // facilita a ordenação
         numeroSorteados.forEach(function(numero){
-            linha.insertCell(coluna).innerHTML = numero
+           
+            linha.insertCell(coluna).innerHTML = numero            
+            if (valApostados.includes(`${numero}`)) {
+                var tds = linha.getElementsByTagName('td')
+                for (let index = 0; index < tds.length; index++) {
+                    const element = tds[index];
+                    if (element.innerHTML == `${numero}`) {
+                        element.style = "background-color:rgb(69, 167, 69);"
+                    }else{console.log("nada");}
+                }
+                
+               console.log("teve");
+            }
+            else{console.log("nem teve");}
             coluna++
-            
         })
     }
+}
 
 
+function verificar() {
+    console.log("clicou");
+    var tabela = document.getElementById("jogosMegaSena")
+    td = tabela.getElementsByTagName("td")
 
-
+   console.log(td.length);
 }
