@@ -96,10 +96,3 @@ function gerarJogos(){
 }
 
 
-function verificar() {
-    console.log("clicou");
-    var tabela = document.getElementById("jogosMegaSena")
-    td = tabela.getElementsByTagName("td")
-
-   console.log(td.length);
-}
