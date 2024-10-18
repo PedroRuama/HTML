@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Financeira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var openBtn = document.getElementById('open-btn');
+        var closeBtn = document.getElementById('close-btn');
+        var sidenav = document.getElementById('sidenav');
+
+        var openBtn2 = document.getElementById('open-btn2');
+        var closeBtn2 = document.getElementById('close-btn2');
+        var sidenav2 = document.getElementById('sidenav2');
+
+        var openLog = document.getElementById('icon_log');
+        var optns_conta = document.getElementById('logado__');
+        var closeBtn__ = document.getElementById('close-btn3');
+
+        openBtn.addEventListener('click', function() {
+            sidenav.style.width = '250px';
+        });
+
+        closeBtn.addEventListener('click', function() {
+            sidenav.style.width = '0';
+        });
+
+        openBtn2.addEventListener('click', function() {
+            sidenav2.style.width = '250px';
+        });
+
+        closeBtn2.addEventListener('click', function() {
+            sidenav2.style.width = '0';
+        });
+
+        openLog.addEventListener('click', function() {
+            optns_conta.style.height = '240px';
+
+
+        });
+
+        closeBtn__.addEventListener('click', function() {
+            optns_conta.style.height = '0';
+        });
+    })
+</script>
+<body>
+    <header>
+        <div class="container">
+            <h1>Consultoria Financeira</h1>
+            <nav>
+                <ul>
+                    <a href="#services"><li>Serviços</li></a>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Sua jornada para a liberdade financeira começa aqui</h2>
+            <p>Oferecemos soluções personalizadas para suas necessidades financeiras.</p>
+            <a href="#contact" class="cta-button">Entre em contato</a>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <h3>Planejamento Financeiro</h3>
+                    <p>Estratégias personalizadas para alcançar suas metas financeiras.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Investimentos</h3>
+                    <p>Consultoria para investimentos inteligentes e seguros.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Consultoria Empresarial</h3>
+                    <p>Melhore a saúde financeira da sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe de especialistas dedicados a ajudar você a alcançar a liberdade financeira. Nossa missão é fornecer consultoria financeira de alta qualidade, adaptada às suas necessidades únicas.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para agendar uma consulta gratuita.</p>
+            <a href="mailto:info@consultoriafinanceira.com" class="cta-button">Envie um E-mail</a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Consultoria Financeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

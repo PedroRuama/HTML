@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido irrecusável</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            padding: 0px;
+            margin: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .box{
+            padding: 0px;
+            margin: 0px;
+            font-size: 20px;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial;
+            background-color: rgb(221, 50, 50);
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .buttons-container{
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            width: 150px;
+            padding: 20px;
+        }
+        button{
+            height: 30px;
+            width: 50px;
+            background:white;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            
+        }
+        :hover #no{
+            cursor: pointer;
+        }
+        img{
+            position: absolute;
+            display: none;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Vamo mata essa sua saudade?
+        <div class="buttons-container">
+            <button id="si" onclick="exibir()"> 
+                Sim
+            </button>
+            <button id="no"> Não</button>
+
+        </div>
+        <img src="https://i.pinimg.com/474x/89/4e/98/894e98a7dd73da2dde06b181b4daca5e.jpg" alt="img-ney" id="imagem">
+    </div>
+</body>
+<script>
+    let button = document.getElementById('no');
+    let img = document.getElementById('imagem')
+    let height = window.innerHeight - 50;
+    let width = window.innerWidth - 50;
+    
+    function exibir() {
+        document.getElementById('imagem').style.display = "block"
+        img.addEventListener("click", function(){
+            document.getElementById('imagem').style.display = "none"
+        });
+
+    }
+
+    button.addEventListener('mouseover', function(){
+        button.style.position = "absolute";
+        button.style.top = Math.random() * height + "px";
+        button.style.left = Math.random() * width + "px";
+    })
+    
+    
+    
+    </script>
+</html>

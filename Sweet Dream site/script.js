@@ -8,7 +8,7 @@ import {slick} from 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1
 function dropUser(){
    if(document.getElementById("menu").onclick){
         document.getElementById("usuario_dropdown_conteudo").style.display = "block"
-   }
+   }sd
     
     document.getElementById("menu").onfocusout = function(){andropUser()}
     
